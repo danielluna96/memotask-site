@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MemoTask — para los que tenemos memoria de pez</title>
+  <meta name="description" content="MemoTask arma tus recordatorios por ti: responde unas preguntitas y listo. Funciona sin internet y sin cuentas. Hecha en Colombia.">
+  <style>
+    :root {
+      --bg: #fdf8ef; --surface: #ffffff; --text: #1e1b13; --muted: #6b6455;
+      --gold: #7a5900; --gold-soft: #f5bd48; --aqua: #00696e;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #15130c; --surface: #201d14; --text: #ece5d8; --muted: #a89f8d;
+              --gold: #f5bd48; --gold-soft: #f5bd48; --aqua: #4cdadf; }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65; min-height: 100vh; display: flex; flex-direction: column;
+    }
+    main { flex: 1; width: min(640px, 92vw); margin: 0 auto; padding: 4rem 0 3rem; }
+    .fish { font-size: 3.2rem; }
+    h1 { font-size: 2.4rem; letter-spacing: -0.02em; margin-top: 0.5rem; }
+    h1 span { color: var(--gold); }
+    .tagline { font-size: 1.15rem; color: var(--muted); margin: 0.6rem 0 2.2rem; }
+    .card { background: var(--surface); border-radius: 18px; padding: 1.5rem 1.7rem;
+            margin-bottom: 1rem; }
+    .card h3 { font-size: 1.02rem; margin-bottom: 0.25rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    .soon { display: inline-block; background: var(--gold-soft); color: #1e1b13;
+            border-radius: 999px; padding: 0.45rem 1.1rem; font-weight: 700;
+            font-size: 0.9rem; margin-top: 1.4rem; }
+    footer { text-align: center; padding: 2rem 1rem; color: var(--muted); font-size: 0.85rem; }
+    footer a { color: var(--muted); }
+    footer .sep { margin: 0 0.5rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="fish">🐟</div>
+    <h1>Memo<span>Task</span></h1>
+    <p class="tagline">Para los que tenemos memoria de pez: tu vida organizada en 30 segundos.</p>
+
+    <div class="card">
+      <h3>Responde unas preguntitas, Memo hace el resto</h3>
+      <p>¿Arriendas? ¿Tienes perro, moto, hijos? MemoTask te deja los recordatorios ya
+         armados: arriendo, SOAT, quincena, vacunas… tú solo enciendes los que te sirvan.</p>
+    </div>
+    <div class="card">
+      <h3>Sin cuentas, sin internet, sin enredos</h3>
+      <p>Funciona 100&nbsp;% en tu teléfono. Si quieres, respaldas tus datos en TU propio
+         Google Drive — nunca en servidores nuestros, porque no tenemos.</p>
+    </div>
+    <div class="card">
+      <h3>La quincena es ciudadana de primera</h3>
+      <p>Recurrencias pensadas para Colombia: los días 15 y fin de mes, el SOAT, la
+         tecnicomecánica y la declaración de renta hablan nuestro idioma.</p>
+    </div>
+
+    <span class="soon">Próximamente en Google Play</span>
+  </main>
+  <footer>
+    <p>
+      © 2026 <a href="https://dlunasoft.com">D Luna Soft</a>
+      <span class="sep">·</span> <a href="/privacidad/">Política de privacidad</a>
+      <span class="sep">·</span> <a href="mailto:soporte@dlunasoft.com">soporte@dlunasoft.com</a>
+    </p>
+  </footer>
+</body>
+</html>
